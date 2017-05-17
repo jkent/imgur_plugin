@@ -1,0 +1,3 @@
+[submodule "lib/imgurpython"]
+	path = lib/imgurpython
+	url = https://github.com/Imgur/imgurpython.git
