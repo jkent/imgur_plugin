@@ -28,8 +28,8 @@ class Plugin(BasePlugin):
         if not m:
             return
 
-        client_id = self.bot.config['imgur']['client_id']
-        client_secret = self.bot.config['imgur']['client_secret']
+        client_id = self.bot.config.get('imgur', 'client_id')
+        client_secret = self.bot.config('imgur', 'client_secret')
 
         client = ImgurClient(client_id, client_secret)
 
