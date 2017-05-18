@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 # vim: set ts=4 et
 
-import os
 import re
-import sys
 
 from imgurpython import ImgurClient
 
@@ -17,9 +15,6 @@ imgur_re = re.compile(
 
 
 class Plugin(BasePlugin):
-    def on_load(self, reloading):
-        print(sys.path)
-    
     @hook('imgur.com')
     @hook('i.imgur.com')
     @hook('m.imgur.com')
